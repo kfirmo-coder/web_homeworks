@@ -1,4 +1,4 @@
-# web_homeworks
+# web_homeworks_EX2
 Hi!
 Welcome to our first project about HTML and CSS.
 
