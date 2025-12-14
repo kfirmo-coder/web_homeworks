@@ -14,4 +14,7 @@ Bootstrap (Copilot) – built using Bootstrap’s grid system with GitHub Copilo
 
 This project compares manual development with AI-assisted approaches and highlights the strengths of each method.
 
+Thank you for viewing our project,
+Kfir,Ido,Roei
+
 Link:  https://kfirmo-coder.github.io/web_homeworks/ 
