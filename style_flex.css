@@ -1,0 +1,54 @@
+/* Flexbox layout for HW2 */
+* { box-sizing: border-box; }
+html, body { height: 100%; margin: 0; font-family: Arial, sans-serif; }
+
+.frame {
+  width: 100vw;
+  min-height: 100vh;
+  border: 6px solid red;
+  padding: 12px;
+  background: #f9f9f9;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+.clearfix::after { content: ""; display: table; clear: both; }
+
+/* Nav spans full width */
+.nav { flex: 0 0 100%; background: #ffd9d9; padding: 12px; margin-bottom: 12px; text-align: center; }
+
+/* Sidebar (left) and main (right) */
+.sidebar { flex: 0 0 22%; background: #ffe0b2; padding: 12px; min-height: 200px; margin-right: 12px; }
+.main { flex: 1 0 78%; padding: 0 0 0 0; }
+
+/* Common box styles */
+.box { background: #fff; padding: 12px; margin-bottom: 12px; border: 2px solid #ccc; display:flex; align-items:center; justify-content:center; text-align:center; }
+
+/* Row container: use flex for each row */
+.row { display: flex; gap: 12px; margin-bottom: 12px; }
+
+/* Top row: four equal small boxes */
+.small { flex: 1 1 0%; min-width: 0; background: #d0f0fd; }
+
+/* Middle row: left column (stacked two thin boxes) and right column (one tall) */
+.col-left { flex: 0 0 50%; display: flex; flex-direction: column; gap: 12px; }
+.col-right { flex: 0 0 50%; }
+.thin { height: 60px; background: #e3f2bd; }
+.tall { height: 140px; background: #f0e1ff; }
+
+/* Bottom row */
+.bottom-big { flex: 0 0 70%; height: 150px; background: #dfe7fd; }
+.bottom-small { flex: 0 0 30%; height: 150px; background: #ffe7e7; }
+
+/* Make sure .main's rows stretch to full width of main area */
+.main > .row { width: 100%; }
+
+/* Mobile: stack everything vertically */
+@media (max-width: 750px) {
+  .frame { flex-direction: column; }
+  .nav, .sidebar, .main { flex-basis: 100%; width: 100%; }
+  .row { flex-direction: column; }
+  .small, .col-left, .col-right, .thin, .tall, .bottom-big, .bottom-small { flex-basis: 100% !important; width: 100% !important; }
+  .thin, .tall, .bottom-big, .bottom-small { height: auto; }
+}

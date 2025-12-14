@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HW2 Flex Layout</title>
+  <link rel="stylesheet" href="style_flex.css">
+</head>
+<body>
+  <div class="frame clearfix">
+    <div class="nav box">IDO IDO IDO IDO</div>
+
+    <div class="sidebar box">IDO IDO IDO IDO</div>
+
+    <div class="main">
+
+      <!-- Top row: four small boxes -->
+      <div class="row">
+        <div class="box small">IDO IDO IDO IDO</div>
+        <div class="box small">IDO IDO IDO IDO</div>
+        <div class="box small">IDO IDO IDO IDO</div>
+        <div class="box small">IDO IDO IDO IDO</div>
+      </div>
+
+      <!-- Middle row: left col (two thin stacked) and right col (one tall) -->
+      <div class="row">
+        <div class="col-left">
+          <div class="box thin">IDO IDO IDO IDO</div>
+          <div class="box thin">IDO IDO IDO IDO</div>
+        </div>
+        <div class="col-right">
+          <div class="box tall">IDO IDO IDO IDO</div>
+        </div>
+      </div>
+
+      <!-- Bottom row: left big, right small -->
+      <div class="row">
+        <div class="box bottom-big">IDO IDO IDO IDO</div>
+        <div class="box bottom-small">IDO IDO IDO IDO</div>
+      </div>
+
+    </div> <!-- /main -->
+  </div> <!-- /frame -->
+</body>
+</html>

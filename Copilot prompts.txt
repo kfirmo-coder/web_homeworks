@@ -1,0 +1,97 @@
+1) Prompt – גרסת Plain-CSS (ללא Flex, ללא Bootstrap)
+
+הדבק ל-Copilot:
+
+PROMPT:
+
+Create a responsive HTML page that matches the layout in my HW2 (wireframe):
+
+Left sidebar column (class: sidebar box) and right main area (class: main).
+
+In the main area:
+
+Top row: four small boxes (box small) aligned in one row.
+
+Middle row: left column (col-left) with two thin boxes (box thin) stacked, and right column (col-right) with one tall box (box tall).
+
+Bottom row: large box on the left (box bottom-big) and smaller box on the right (box bottom-small).
+
+Use ONLY plain CSS (no flex, no bootstrap). You may use floats / inline-block / position / table layout.
+
+Use EXACT same class names: frame clearfix nav box sidebar main row small col-left col-right thin tall bottom-big bottom-small.
+
+Add a media query at max-width 750px that stacks ALL boxes vertically (one under another), similar to the given example image for mobile.
+
+The outer container .frame must fill the entire viewport: width 100vw and min-height 100vh with a thick red border.
+
+Put “IDO IDO IDO IDO” inside each box so I can see them.
+Output two files: HW2_plain.html and style_plain.css and link the CSS correctly.
+
+
+
+
+
+2) Prompt – גרסת Flex (אותן מחלקות!)
+
+הדבק ל-Copilot:
+
+PROMPT:
+
+Create the SAME layout as HW2, but implement it using CSS Flexbox.
+Requirements:
+
+Must use the SAME HTML class names as the plain version: frame clearfix nav box sidebar main row small col-left col-right thin tall bottom-big bottom-small.
+
+Build a file HW2_flex.html + style_flex.css.
+
+Use flexbox for layout (no floats).
+
+Desktop: sidebar on the left (22%) and main on the right (78%).
+
+Top row: 4 equal boxes in one row.
+
+Middle row: left column with 2 stacked thin boxes, right column with 1 tall box.
+
+Bottom row: 70% big box + 30% small box.
+
+Mobile (max-width: 750px): stack everything vertically (sidebar then all boxes one under another).
+
+Outer .frame must fill viewport: width 100vw, min-height 100vh, red border.
+
+Put “IDO IDO IDO IDO” inside each box.
+Provide full code for both files.
+
+
+
+
+3) Prompt – גרסת Bootstrap
+
+הדבק ל-Copilot:
+
+PROMPT:
+
+Create the SAME layout as HW2 using Bootstrap 5.
+Requirements:
+
+Output HW2_bootstrap.html only (you can embed small custom CSS in a <style> block if needed).
+
+Use Bootstrap grid (container-fluid, row, col-*) to create:
+
+Sidebar left ~22% and main right ~78% on desktop.
+
+Top row: 4 equal boxes.
+
+Middle row: left column with 2 stacked thin boxes, right column with 1 tall box.
+
+Bottom row: 70% big box + 30% small box.
+
+Mobile: from 750px and below, everything stacks vertically (one under another).
+
+Keep the same class names on the boxes themselves for compatibility: box sidebar main small thin tall bottom-big bottom-small.
+
+Add thick red borders like the wireframe for .frame and .box.
+
+.frame fills viewport: width 100vw, min-height 100vh.
+
+Put “IDO IDO IDO IDO” inside each box.
+Use Bootstrap CDN links in the <head> and ensure it works standalone.
